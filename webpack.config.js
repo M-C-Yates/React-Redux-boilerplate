@@ -16,7 +16,7 @@ module.exports = (env) => {
         new MiniCssExtractPlugin({
           filename: 'style.css'
         }),
-        new CompressionPlugin({   <-- Add this
+        new CompressionPlugin({
           asset: "[path].gz[query]",
           algorithm: "gzip",
           test: /\.js$|\.css$|\.html$/,
