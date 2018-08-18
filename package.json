@@ -48,11 +48,11 @@
     "uuid": "^3.3.2",
     "validator": "^10.4.0",
     "webpack": "^4.16.3",
+    "compression": "^1.7.3",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
   },
   "devDependencies": {
-    "compression": "^1.7.3",
     "live-server": "^1.2.0",
     "mini-css-extract-plugin": "^0.4.1"
   }
