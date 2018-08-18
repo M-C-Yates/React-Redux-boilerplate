@@ -3,14 +3,10 @@ const path = require('path');
 const app = express();
 const publicPath = path.join(__dirname, '..', 'public');
 const port = process.env.PORT || 3000;
-
+var compression = require('compression');
+app.use(compression());
 app.use(express.static(publicPath));
 
-app.get('*.js', function (req, res, next) {
-  req.url = req.url + '.gz';
-  res.set('Content-Encoding', 'gzip');
-  next();
-});
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'))

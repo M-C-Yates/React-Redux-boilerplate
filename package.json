@@ -52,7 +52,7 @@
     "webpack-dev-server": "^3.1.5"
   },
   "devDependencies": {
-    "compression-webpack-plugin": "^1.1.11",
+    "compression": "^1.7.3",
     "live-server": "^1.2.0",
     "mini-css-extract-plugin": "^0.4.1"
   }
