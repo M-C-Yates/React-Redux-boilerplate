@@ -3,11 +3,10 @@
 exports[`should render Header correctly 1`] = `
 <header>
   <h1>
-    budget app
+    Expensify
   </h1>
   <NavLink
     activeClassName="is-active"
-    aria-current="page"
     exact={true}
     to="/"
   >
@@ -15,7 +14,6 @@ exports[`should render Header correctly 1`] = `
   </NavLink>
   <NavLink
     activeClassName="is-active"
-    aria-current="page"
     to="/create"
   >
     Create Expense
