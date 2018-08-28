@@ -1,5 +1,6 @@
 import expensesReducer from '../../reducers/expenses';
 import expenses from '../fixtures/expenses';
+import { startSetExpenses } from '../../actions/expenses';
 
 test('should set default state', () => {
   const state = expensesReducer(undefined, { type: '@@INIT' });
@@ -64,4 +65,25 @@ test('should not edit an expense if id not found', () => {
   };
   const state = expensesReducer(expenses, action);
   expect(state).toEqual(expenses);
+});
+
+// test('should set expenses', () => {
+//   const action = {
+//     type: 'SET_EXPENSES',
+//     expenses: [expenses]
+//   };
+//   const state = expensesReducer(expenses, action)
+//   expect(state).toEqual(expenses);
+// });
+
+test('should fetch expenses from firebase', (done) => {
+  const store = createMockStore({});
+  store.dispatch(startSetExpenses()).then(() => {
+    const actions = store.getActions();
+    expect(actions[0]).toEqual({
+      type: 'SET_EXPENSES',
+      expenses
+    });
+    done();
+  });
 });
