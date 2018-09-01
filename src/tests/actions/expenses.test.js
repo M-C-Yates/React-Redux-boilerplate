@@ -117,10 +117,10 @@ test('should add expense to database and store', (done) => {
   });
 
 
-test('should setup set expense action object with data', () => {
-  const action = setExpenses(expenses);
-  expect(action).toEqual({
-    type: 'SET_EXPENSES',
-    expenses
-  });
-});
+// test('should setup set expense action object with data', () => {
+//   const action = setExpenses(expenses);
+//   expect(action).toEqual({
+//     type: 'SET_EXPENSES',
+//     expenses
+//   });
+// });
