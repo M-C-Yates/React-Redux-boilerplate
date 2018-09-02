@@ -2,7 +2,7 @@ import * as firebase from 'firebase';
 
 
 const config = {
-  apiKey: `${process.env.FIREBASE_API_KEY}`,
+  apiKey: 'AIzaSyBpHhCypfsGfhgVQPc_boktY4tAr4Y1lxU',
   authDomain: "budgetapp-3b626.firebaseapp.com",
   databaseURL: "https://budgetapp-3b626.firebaseio.com",
   projectId: "budgetapp-3b626",
