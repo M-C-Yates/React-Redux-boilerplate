@@ -1,0 +1,48 @@
+.btn {
+    background-color: #B670CB;
+    border: 1px solid transparent;
+    color: $light-grey;
+    margin: $s-size;
+    margin-top: 2.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 3px;
+    font-weight: 300;
+    font-size: 2rem;
+
+  &--login {
+    margin: $s-size;
+    padding: 1.5rem 1.5rem;
+  }
+
+
+  &--logout {
+    background-color: transparent;
+    font-size: 3rem;
+  }
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+    border: 1px solid $light-grey;
+    color: $light-grey;
+    transition: .5s all ease-out;
+  }
+}
+
+.btn-link {
+  background-color: #B670CB;
+  border: 1px solid transparent;
+  color: $light-grey;
+  margin: $s-size;
+  margin-top: 2.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 3px;
+  font-weight: 300;
+  font-size: 2rem;
+  
+  &:hover,
+  &:active {
+    background-color: #a34bbd;
+    transition: .5s all ease-out;
+  }
+}

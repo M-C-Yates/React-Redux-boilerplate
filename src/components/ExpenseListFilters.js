@@ -18,19 +18,28 @@ export class ExpenseListFilters extends React.Component {
   };
   render() {
     return (
-      <div>
-        <input
-          type="text"
-          value={this.props.filters.text}
-          onChange={this.onTextChange}
-        />
-        <select
-          value={this.props.filters.sortBy}
-          onChange={this.onSortChange}
-        >
-          <option value="date">Date</option>
-          <option value="amount">Amount</option>
-        </select>
+      <div className="content-container">
+        <div className="input-group">
+          <div className="input-group__item">
+            <input
+            type="text"
+            className="text-input"
+            placeholder="Filter by title"
+            value={this.props.filters.text}
+            onChange={this.onTextChange}
+            />
+          </div>
+          <div>
+            <select
+            className="select"
+            value={this.props.filters.sortBy}
+            onChange={this.onSortChange}
+            >
+              <option value="date">Date</option>
+              <option value="amount">Amount</option>
+            </select>
+          </div>
+        </div>
       </div>
     );
   }

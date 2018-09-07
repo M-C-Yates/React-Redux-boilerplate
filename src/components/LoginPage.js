@@ -3,10 +3,14 @@ import { connect } from 'react-redux';
 import { startLogin } from '../actions/auth';
 
 export const LoginPage = ({ startLogin }) => (
-  <div>
-    <button onClick={startLogin} >
-    Login
-    </button>
+  <div className="box-layout">
+    <div className="box-layout__box">
+      <h1 className="box-layout__title">Budget</h1>
+      <p className="box-layout__body">Built with react/redux and firebase</p>
+      <button onClick={startLogin} className="btn btn--login" >
+      Login with Google
+      </button>
+    </div>
   </div>
 );
 
@@ -15,3 +19,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(undefined, mapDispatchToProps)(LoginPage);
+
