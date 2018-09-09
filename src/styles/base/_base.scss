@@ -33,19 +33,19 @@ body {
   height: 100%;
   width: 100%;
   max-width: 450rem;
-  background-color: #f5F5F5;
+  background-color: #fcFcFc;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  padding-bottom: 1rem;
   
   @media (min-width: $desktop-breakpoint) {
     width: 98%;
     border-radius: 3px;
-    height: 95%;
+    height: 96vh;
     margin-top: 2rem;
     box-shadow: 0.5rem 1rem 5rem rgba(0, 0, 0, 0.219);
   }
 }
-
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto Condensed', sans-serif;

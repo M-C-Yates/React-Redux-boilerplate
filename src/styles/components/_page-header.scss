@@ -1,12 +1,16 @@
 .page-header {
-  background-color: #fcfcfc;
+  background-color: $mid-grey;
   height: 100%;
-  padding: $l-size 0;
-  margin-bottom: $l-size;
+  padding: $m-size 0;
+  margin-bottom: $m-size;
   display: flex;
   flex-direction: column;
   justify-content: center;
   
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: $l-size;
+    padding: $l-size 0;
+  }
 
   &__title {
     font-weight: 300;

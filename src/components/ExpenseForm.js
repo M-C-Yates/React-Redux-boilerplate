@@ -56,9 +56,9 @@ export default class ExpenseForm extends React.Component {
   };
   render() {
     return (
-      <div>
-        {this.state.error && <p>{this.state.error}</p>}
-        <form onSubmit={this.onSubmit}>
+      <React.Fragment>
+        <form className="form" onSubmit={this.onSubmit}>
+          {this.state.error && <p className="form__error">{this.state.error}</p>}
           <input
             type="text"
             className="text-input"
@@ -82,11 +82,14 @@ export default class ExpenseForm extends React.Component {
             onChange={this.onNoteChange}
           >
           </textarea>
-          <button
-          className="btn-link"
-          >Save Expense</button>
+
+          <div>
+            <button className="btn-link">
+            Save Expense
+            </button>
+          </div>
         </form>
-      </div>
+      </React.Fragment>
     )
   }
 }
