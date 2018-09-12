@@ -1,9 +1,10 @@
 import React from 'react';
 
-const HelpPage = () => (
+
+const DashboardPage = () => (
   <React.Fragment>
-    nothing here yet
+    
   </React.Fragment>
 );
 
-export default HelpPage;
+export default DashboardPage;

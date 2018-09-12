@@ -5,7 +5,7 @@ import { startLogin } from '../actions/auth';
 export const LoginPage = ({ startLogin }) => (
   <div className="box-layout">
     <div className="box-layout__box">
-      <h1 className="box-layout__title">Budget</h1>
+      <h1 className="box-layout__title">boilerplate</h1>
       <p className="box-layout__body">Built with react/redux and firebase</p>
       <button onClick={startLogin} className="btn btn--login" >
       Login with Google
