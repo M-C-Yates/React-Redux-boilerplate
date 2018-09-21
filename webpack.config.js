@@ -1,7 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const dotEnv = require('dotenv');
+dotEnv.config({ path: '.env' });
 
 module.exports = (env) => {
   const isProduction = env === 'production';
